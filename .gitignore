@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Operating systems
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Temporary files
+*.log
+tmp/
+temp/
+
+# Generated outputs
+results/
+output/
+logs/
+
+# Large neuroimaging data
+data/raw/
+data/processed/
+
+# Generated figures
+figures/generated/
