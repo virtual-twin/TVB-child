@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite this repository and the associated manuscript."
+title: "TVB-Child: The Virtual Child Brain - Modeling Neuromaturational Trajectories"
+type: software
+authors:
+  - family-names: "Westin"
+    given-names: "Karin"
+    orcid: "0000-0003-4497-7596"
+repository-code: "https://github.com/virtual-twin/TVB-child"
+license: MIT
+version: 1.0.0
+date-released: 2026-07-22
