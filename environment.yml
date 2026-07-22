@@ -1,0 +1,5 @@
+python=3.11
+numpy=2.x
+scipy=1.x
+pytorch=x.x
+tvb-library=x.x
