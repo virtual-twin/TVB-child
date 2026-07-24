@@ -1,0 +1,85 @@
+[build-system]
+requires = ["flit_core"]
+build-backend = "flit_core.buildapi"
+
+[project]
+classifiers = [
+  # How mature is this project? Common values are
+  #   3 - Alpha
+  #   4 - Beta
+  #   5 - Production/Stable
+  "Development Status :: 3 - Alpha",
+
+  # Specify the Python versions you support here.
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+
+license = { text = "GNU General Public License v3" }
+
+name = "tvb-fit"
+dynamic = ["version"]
+description = "TVB backends for automatic model differentiation."
+readme = "README.rst"
+authors = [{ name = "Marius Pille", email = "marius.pille@bih-charite.de" }]
+maintainers = [
+  { name = "Marius Pille", email = "marius.pille@bih-charite.de" },
+  { name = "Leon Martin", email = "leon.martin@bih-charite.de" },
+]
+dependencies = [
+  "numpy",
+  "jax",
+  "jaxlib",
+  "pytensor",
+  "tvb_autodiff",
+  "tvb_library",
+  "tvb_framework",
+  "optax",
+  "optimistix",
+  "numpyro",
+  "pymc",
+  "matplotlib",
+  "pa"
+]
+
+
+[project.optional-dependencies]
+dev = [
+  "coverage", # testing
+  "mypy",     # linting
+  "pytest",   # testing
+  "ruff",     # linting
+]
+
+[project.urls]
+
+bugs = "https://github.com/mapi1/tvb-fit/issues"
+changelog = "https://github.com/mapi1/tvb-fit/blob/master/changelog.md"
+homepage = "https://github.com/mapi1/tvb-fit"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.package-data]
+"*" = ["*.*"]
+
+
+# Mypy
+# ----
+
+[tool.mypy]
+files = "."
+
+# Use strict defaults
+strict = true
+warn_unreachable = true
+warn_no_return = true
+
+[[tool.mypy.overrides]]
+# Don't require test functions to include types
+module = "tests.*"
+allow_untyped_defs = true
+disable_error_code = "attr-defined"

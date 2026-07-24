@@ -1,0 +1,8 @@
+numpy
+mako
+jax
+jaxlib
+autopep8
+tvb_library
+tvb_framework
+pytensor

@@ -1,0 +1,24 @@
+# Book settings
+title: tvb-autodiff documentation
+author: Leon K. Martin
+logo: ../imgs/logo.png
+
+execute:
+  execute_notebooks: cache
+  timeout: 1000
+
+html:
+  favicon: ../imgs/tvbo_favicon.png
+  # use_issues_button: true
+  # use_repository_button: true
+  theme_color: light
+
+sphinx:
+  extra_extensions:
+    - "autodoc2"
+    - "sphinx.ext.autosummary"
+  config:
+    autosummary_generate: True
+    autodoc2_packages: ["../src/tvb_autodiff"]
+    autodoc2_render_plugin: "myst"
+    myst_enable_extensions: ["fieldlist"]

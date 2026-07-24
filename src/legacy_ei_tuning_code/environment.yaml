@@ -1,0 +1,18 @@
+name: process_subject_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - numpy
+  - matplotlib
+  - jax
+  - jaxlib
+  - pip
+  - pip:
+      - dill
+      - tvb-library
+      - tvb-framework
+      - git+https://github.com/virtual-twin/tvbo-python.git@dev
+      - git+https://github.com/virtual-twin/tvb-autodiff.git@main
+      - git+https://github.com/virtual-twin/tvb-fit.git@main

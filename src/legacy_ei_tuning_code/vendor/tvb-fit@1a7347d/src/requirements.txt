@@ -1,0 +1,7 @@
+numpy
+jax
+jaxlib
+pytensor
+tvb_autodiff
+tvb_library
+tvb_framework

@@ -1,0 +1,16 @@
+format: jb-book
+root: index
+
+parts:
+  - caption: Documentation
+    chapters:
+      - file: readme
+      - file: installation
+      - file: usage
+      - file: contributing
+      - file: history
+      - file: authors
+      - file: apidocs/index
+  - caption: Tutorials
+    chapters:
+      - file: notebooks/AD-TVBO

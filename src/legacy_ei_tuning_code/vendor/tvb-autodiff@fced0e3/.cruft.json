@@ -1,0 +1,26 @@
+{
+  "template": "https://github.com/audreyfeldroy/cookiecutter-pypackage",
+  "commit": "301eceaee466f6031b93c917cd03d6b3aced3440",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "full_name": "Marius Pille",
+      "email": "marius.pille.bih-charite.de",
+      "github_username": "mapi1",
+      "project_name": "tvb-autodiff",
+      "project_slug": "tvb_autodiff",
+      "project_short_description": "TVB backends for automatic model differentiation.",
+      "pypi_username": "mapi1",
+      "version": "0.0.1",
+      "use_pytest": "n",
+      "use_pypi_deployment_with_travis": "y",
+      "add_pyup_badge": "n",
+      "command_line_interface": "No command-line interface",
+      "create_author_file": "y",
+      "open_source_license": "GNU General Public License v3",
+      "__gh_slug": "mapi1/tvb_autodiff",
+      "_template": "https://github.com/audreyfeldroy/cookiecutter-pypackage"
+    }
+  },
+  "directory": null
+}
